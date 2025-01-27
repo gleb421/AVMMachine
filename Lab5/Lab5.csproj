@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <RootNamespace>Itmo.ObjectOrientedProgramming.Lab5</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Itmo.Dev.Platform.Postgres" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" />
+      <PackageReference Include="SourceKit.Generators.Builder" />
+      <PackageReference Include="Spectre.Console" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Lab5.Infrastucture.DataAccess\Lab5.Infrastucture.DataAccess.csproj" />
+      <ProjectReference Include="Lab5.Application.Contracts\Lab5.Application.Contracts.csproj" />
+      <ProjectReference Include="Lab5.Application\Lab5.Application.csproj" />
+      <ProjectReference Include="Lab5.Presentation\Lab5.Presentation.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Lab5.Domain\**" />
+      <Compile Remove="Lab5.Application.Abstractions\**" />
+      <Compile Update="Lab5.Application.Contracts\IBankAccountService.cs">
+        <Link>Lab5.Application.Conracts\IBankAccountService.cs</Link>
+      </Compile>
+      <Compile Remove="Lab5.Application.Contracts\**" />
+      <Compile Remove="Lab5.Application\**" />
+      <Compile Remove="Lab5.Presentation\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Lab5.Domain\**" />
+      <EmbeddedResource Remove="Lab5.Application.Abstractions\**" />
+      <EmbeddedResource Remove="Lab5.Application.Contracts\**" />
+      <EmbeddedResource Remove="Lab5.Application\**" />
+      <EmbeddedResource Remove="Lab5.Presentation\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Lab5.Domain\**" />
+      <None Remove="Lab5.Application.Abstractions\**" />
+      <None Remove="Lab5.Application.Contracts\**" />
+      <None Remove="Lab5.Application\**" />
+      <None Remove="Lab5.Presentation\**" />
+    </ItemGroup>
+
+</Project>
