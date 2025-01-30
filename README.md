@@ -1,11 +1,11 @@
 # AVM Machine
-
-# Демонстрация работы программы
-![Image alt](https://github.com/gleb421/AVMMachine/blob/main/images/Снимок%20экрана%202025-01-27%20в%2020.37.16.png)
-![Image alt](https://github.com/gleb421/AVMMachine/blob/main/images/Снимок%20экрана%202025-01-27%20в%2020.37.40.png)
 # Цель программы
 
 Реализовать систему банкомата, используя луковую архитектуру с богатой доменной моделью, соблюдая принципы SOLID и OOП
+# Демонстрация работы программы
+![Image alt](https://github.com/gleb421/AVMMachine/blob/main/images/Снимок%20экрана%202025-01-27%20в%2020.37.16.png)
+![Image alt](https://github.com/gleb421/AVMMachine/blob/main/images/Снимок%20экрана%202025-01-27%20в%2020.37.40.png)
+
 
 # Функционал
 ## Команды
